@@ -31,8 +31,16 @@ const heros = ["thor", "spiderman", "iromnan"]
 
 // ifthe heros array is a number, then the type of each hero will be a number"
 
-heros.map(hero =>{
+heros.map((hero :string) =>{
     return `hero is ${hero}`
 })
+
+function consoleError(errmsg: string) {
+    console.log(errmsg)
+}
+
+function handleError(errmsg:string) {
+    throw new Error(errmsg);
+}
 
 export {}
