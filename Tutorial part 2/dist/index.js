@@ -4,8 +4,11 @@ class User {
     constructor(name, age) {
         this.name = name;
         this.age = age;
+        // you can also use readonly to make any property readonly
+        this.city = "";
         this.name = name;
         this.age = age;
     }
 }
 const Ola = new User("Joy", 14);
+Ola.city = "Ife";
