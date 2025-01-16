@@ -17,6 +17,9 @@ class User {
         console.log("Token deleted")
     }
 
+    //we will continue drom here tomorrow no light
+
+    
     get getAppleEmail(): string{
         return `${this.name}.${this.id}@gmail.com`
     }
@@ -32,4 +35,10 @@ class User {
     //you can't make CourseCount :number or any other type
 }
 const Ola = new User( "Joy", 14);
-Ola.city = "Ife" 
+// Ola.city = "Ife" 
+
+setTimeout(() => {
+    console.log('first')
+}, 200);
+
+``
