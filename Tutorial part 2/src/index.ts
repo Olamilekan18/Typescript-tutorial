@@ -6,6 +6,7 @@ class User {
     // you can also use readonly to make any property readonly
     city: string = ""
     private readonly id: string = "1a112"
+    protected courseCounts: number = 0;
     //private makes it unaccessible after the user class
     constructor(public name: string, public age: number) {
         this.name = name
@@ -37,8 +38,13 @@ class User {
 const Ola = new User( "Joy", 14);
 // Ola.city = "Ife" 
 
+//proteted will be accessible in the user and subuser
+class subUser extends User{
+    isFamily: boolean = true;
+    courseCounts = 3;
+}
+
 setTimeout(() => {
     console.log('first')
 }, 200);
 
-``
