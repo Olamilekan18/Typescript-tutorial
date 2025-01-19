@@ -28,8 +28,21 @@ function getSearchProducta<T>(products : T[]): T{
     return products[myIndex]
 }
 
+interface Database{
+    connection: string,
+    username: string,
+    password: string
+}
+
 
 // USE COMMA MORE WHEN YOU USE TS WITH REACT
 const getMoreSearchProducts = <T,>(): T => {
     return {} as T
+}
+
+function anotherFunction<T, U>(valOne : T, valTwo : U):object{
+    return {
+        valOne,
+        valTwo
+    }
 }
